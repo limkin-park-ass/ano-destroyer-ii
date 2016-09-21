@@ -28,6 +28,8 @@
             <string>image_speed = 0.1;
 sprite_index = LIMKIN_STILL;
 dir = 1;
+sprite_index = LIMKIN_WALK_R_L_STILL;
+dir = 2;
 </string>
           </argument>
         </arguments>
@@ -50,13 +52,14 @@ dir = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_left) { x -= 5; image_speed = 0.1; sprite_index = LIMKIN_WALK_UP; dir = 1 }
-if keyboard_check(vk_right) { x += 5; image_speed = 0.1; sprite_index = LIMKIN_WALK_DOWN; dir = 2; }
-if keyboard_check(vk_up) { y -= 5; image_speed = 0.1; sprite_index = LIMKIN_WALK_UP; dir = 3; }
-if keyboard_check(vk_down) { y += 5; image_speed = 0.1; sprite_index = LIMKIN_WALK_DOWN; dir = 4; }
+            <string>if keyboard_check(vk_left) { x -= 5; image_speed = 0.3; sprite_index = LIMKIN_WALK_L_R_ANIM_2; dir = 1 }
+if keyboard_check(vk_right) { x += 5; image_speed = 0.3; sprite_index = LIMKIN_WALK_L_R_ANIM; dir = 2; }
+if keyboard_check(vk_up) { y -= 5; image_speed = 0.3; sprite_index = LIMKIN_WALK_UP; dir = 3; }
+if keyboard_check(vk_down) { y += 5; image_speed = 0.3; sprite_index = LIMKIN_WALK_DOWN; dir = 4; }
 if keyboard_check(vk_nokey) { sprite_index = LIMKIN_STILL; image_speed = 0; } 
-if keyboard_check(vk_nokey) and dir = 3 { image_index = 1; }
-if keyboard_check(vk_nokey) and dir = 4 { image_index = 0; }
+if keyboard_check(vk_nokey) and dir = 1 { image_index = 1; }
+if keyboard_check(vk_nokey) and dir = 1 { image_index = 0; }
+if keyboard_check(vk_nokey) and dir = 2 { image_index = 0; }
 </string>
           </argument>
         </arguments>
