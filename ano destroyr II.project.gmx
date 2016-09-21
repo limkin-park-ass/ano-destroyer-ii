@@ -13,6 +13,8 @@
     <sprite>sprites\PLACEHOLDER</sprite>
     <sprite>sprites\LIMKIN_WALK_UP</sprite>
     <sprite>sprites\COLLISION_TEST</sprite>
+    <sprite>sprites\LIMKIN_WALK_R_L_STILL</sprite>
+    <sprite>sprites\LIMKIN_WALK_L_R_ANIM</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
